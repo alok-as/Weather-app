@@ -11,7 +11,7 @@ const getForecast = (event) => {
 	messageOne.textContent = "...Loading";
 	messageTwo.textContent = "";
 
-	fetch(`http://localhost:3000/weather?address=${location}`)
+	fetch(`/weather?address=${location}`)
 		.then((response) => {
 			return response.json();
 		})
